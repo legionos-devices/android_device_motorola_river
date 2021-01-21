@@ -255,6 +255,15 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_vstab_module.so
+vendor/lib64/libmmcamera2_frame_algorithm.so
+vendor/lib64/libmmcamera2_is.so
+vendor/lib64/libmmcamera2_stats_algorithm.so
+vendor/lib64/libmmcamera2_stats_lib.so
+vendor/lib64/libmmcamera_dbg.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_tintless_algo.so
+vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Camera - Firmware
 vendor/firmware/cpp_firmware_v1_10_0.fw
