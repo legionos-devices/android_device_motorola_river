@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/styx_river.mk
+    $(LOCAL_DIR)/legion_river.mk
 
 COMMON_LUNCH_CHOICES := \
-    styx_river-eng \
-    styx_river-user \
-    styx_river-userdebug
+    legion_river-eng \
+    legion_river-user \
+    legion_river-userdebug

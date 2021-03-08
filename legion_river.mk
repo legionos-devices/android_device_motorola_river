@@ -25,10 +25,29 @@ $(call inherit-product, vendor/styx/config/common.mk)
 # Inherit from river device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official
+LEGION_BUILD_TYPE := OFFICIAL
+
+# LegionOS Device Maintainers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=VitorSSSouza
+
+# Remove GAPPS
+REMOVE_GAPPS_PACKAGES += \
+         Googlequicksearchbox \
+         maps \
+         files\
+         gm
+
+# Device identifier
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := river
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := styx_river
+PRODUCT_NAME := legion_river
 PRODUCT_MODEL := moto g(7)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -37,5 +56,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := motorola/river_retail/river:10/QPUS30.52-16-2-12/c57dd6:user/release-keys
 
-# StyxOS Variant
-STYX_BUILD_VARIANT := RELEASE
