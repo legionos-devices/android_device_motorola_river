@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotCamera2
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-egis.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-egis.kl \
