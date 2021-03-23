@@ -19,12 +19,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some commona Styx stuff
-$(call inherit-product, vendor/styx/config/common.mk)
+# Inherit some commona Project LegionOS stuff
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # Inherit from river device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Official
+LEGION_BUILD_TYPE := OFFICIAL
+
+# LegionOS Device Maintainers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.maintainer.name=VitorSSSouza
+
+# Device identifier
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := river
 PRODUCT_MANUFACTURER := motorola
@@ -36,6 +47,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := motorola/river_retail/river:10/QPUS30.52-16-2-12/c57dd6:user/release-keys
-
-# StyxOS Variant
-STYX_BUILD_VARIANT := OFFICIAL
