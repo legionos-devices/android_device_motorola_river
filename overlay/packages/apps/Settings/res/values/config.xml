@@ -28,8 +28,10 @@
      <string name="legion_screen_type_summary">6.2 inch IPS LCD</string>
 
     <!--  Legion Battery Health  -->
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
-    <bool name="config_supportBatteryHealth">true</bool>     
+     <!-- Battery Health -->
+    <string name="config_batChargeCycle">/sys/class/power_supply/battery/cycle_count</string>
+    <string name="config_batDesCap">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batCurCap">/sys/class/power_supply/battery/charge_counter</string>
+    <bool name="config_supportBatteryHealth">true</bool>
+
 </resources>
