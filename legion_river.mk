@@ -28,12 +28,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Official
+# LegionOS maintainer status
 LEGION_BUILD_TYPE := OFFICIAL
-
-# LegionOS Device Maintainers
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.maintainer.name=VitorSSSouza
+LEGION_MAINTAINER := VitorSSSouza
 
 # Device identifier
 PRODUCT_BRAND := motorola
